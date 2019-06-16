@@ -6,8 +6,8 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"
     />
+    <meta http-equiv="x-ua-compatible" content="IE=Edge" />
     <title>Stencil Component Starter</title>
-
     <script type="module" src="/build/stencilcomponents.esm.js"></script>
     <script nomodule src="/build/stencilcomponents.js"></script>
   </head>
@@ -18,7 +18,7 @@
         var progress = document.querySelector("progress-bar"),
           complete = 0;
 
-        var progressInterval = setInterval(() => {
+        var progressInterval = setInterval(function() {
           complete += 1;
 
           if (complete <= 100) {
