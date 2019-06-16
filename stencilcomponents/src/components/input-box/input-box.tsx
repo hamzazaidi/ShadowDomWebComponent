@@ -8,7 +8,7 @@ import { Component, Prop, h, Element } from "@stencil/core";
 export class InputBox {
   @Element() el: HTMLElement;
   inputBox: HTMLInputElement;
-  @Prop() label: string;
+  @Prop() label: string = "";
 
   componentDidLoad() {
     this.inputBox = this.el.querySelector("input");
