@@ -1,4 +1,4 @@
-# my-component
+# Input box
 
 <!-- Auto Generated Below -->
 
@@ -6,7 +6,7 @@
 
 | Property | Attribute | Description     | Type     | Default |
 | -------- | --------- | --------------- | -------- | ------- |
-| `label`  | `label`   | label for input | `string` | `0`     |
+| `label`  | `label`   | label for input | `string` | ``      |
 
 ---
 

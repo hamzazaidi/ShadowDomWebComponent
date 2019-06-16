@@ -1,4 +1,4 @@
-# my-component
+# Progress bar
 
 <!-- Auto Generated Below -->
 
