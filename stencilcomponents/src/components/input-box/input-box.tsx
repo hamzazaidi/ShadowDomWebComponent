@@ -8,7 +8,6 @@ import { Component, Prop, h, Element } from "@stencil/core";
 export class InputBox {
   @Element() el: HTMLElement;
   inputBox: HTMLInputElement;
-  inputIsEmpty: boolean = true;
   @Prop() label: string;
 
   componentDidLoad() {

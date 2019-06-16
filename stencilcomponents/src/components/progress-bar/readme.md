@@ -10,4 +10,29 @@
 
 ---
 
+## Usage
+
+```html
+<pre>
+    <progress-bar></progress-bar>
+</pre>
+```
+
+```javascript
+(function() {
+  var progress = document.querySelector("progress-bar"),
+    complete = 0;
+
+  var progressInterval = setInterval(function() {
+    complete += 1;
+
+    if (complete <= 100) {
+      progress.setAttribute("complete", complete);
+    } else {
+      clearInterval(progressInterval);
+    }
+  }, 100);
+})();
+```
+
 _Built with [StencilJS](https://stenciljs.com/)_

@@ -4,9 +4,9 @@
 
 ## Properties
 
-| Property   | Attribute  | Description     | Type     | Default |
-| ---------- | ---------- | --------------- | -------- | ------- |
-| `complete` | `complete` | progress status | `string` | `0`     |
+| Property | Attribute | Description     | Type     | Default |
+| -------- | --------- | --------------- | -------- | ------- |
+| `label`  | `label`   | label for input | `string` | `0`     |
 
 ---
 
