@@ -10,4 +10,12 @@
 
 ---
 
+## Usage
+
+```html
+<<input-box label="First Name">
+  <input type="text" />
+</input-box>
+```
+
 _Built with [StencilJS](https://stenciljs.com/)_

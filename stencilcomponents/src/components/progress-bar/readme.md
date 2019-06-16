@@ -13,9 +13,7 @@
 ## Usage
 
 ```html
-<pre>
-    <progress-bar></progress-bar>
-</pre>
+<progress-bar></progress-bar>
 ```
 
 ```javascript
