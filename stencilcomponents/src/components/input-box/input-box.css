@@ -1,0 +1,31 @@
+:host {
+  font-family: "Courier New", Courier, monospace;
+  position: relative;
+}
+
+::slotted(input) {
+  width: 100%;
+  border: 2px solid #343d82;
+  border-radius: 5px;
+  padding: 20px 10px 10px 10px;
+  font-size: 20px;
+  box-sizing: border-box;
+}
+
+label {
+  font-family: inherit;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: max-content;
+  z-index: 0;
+  font-size: 20px;
+  transition: all 100ms ease-in;
+}
+
+:host(:not(.input-is-empty)) label {
+  transform: translateY(-130%);
+  font-size: 14px;
+  color: #636363;
+}

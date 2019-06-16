@@ -10,9 +10,21 @@
     <title>Stencil Component Starter</title>
     <script type="module" src="/build/stencilcomponents.esm.js"></script>
     <script nomodule src="/build/stencilcomponents.js"></script>
+    <style>
+      .section {
+        margin-bottom: 20px;
+      }
+    </style>
   </head>
   <body>
-    <progress-bar></progress-bar>
+    <div class="section">
+      <progress-bar></progress-bar>
+    </div>
+    <div class="section">
+      <input-box label="First Name">
+        <input type="text" />
+      </input-box>
+    </div>
     <script>
       (function() {
         var progress = document.querySelector("progress-bar"),

@@ -9,6 +9,9 @@ import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 
 
 export namespace Components {
+  interface InputBox {
+    'label': string;
+  }
   interface ProgressBar {
     'complete': number;
   }
@@ -17,22 +20,33 @@ export namespace Components {
 declare global {
 
 
+  interface HTMLInputBoxElement extends Components.InputBox, HTMLStencilElement {}
+  var HTMLInputBoxElement: {
+    prototype: HTMLInputBoxElement;
+    new (): HTMLInputBoxElement;
+  };
+
   interface HTMLProgressBarElement extends Components.ProgressBar, HTMLStencilElement {}
   var HTMLProgressBarElement: {
     prototype: HTMLProgressBarElement;
     new (): HTMLProgressBarElement;
   };
   interface HTMLElementTagNameMap {
+    'input-box': HTMLInputBoxElement;
     'progress-bar': HTMLProgressBarElement;
   }
 }
 
 declare namespace LocalJSX {
+  interface InputBox extends JSXBase.HTMLAttributes<HTMLInputBoxElement> {
+    'label'?: string;
+  }
   interface ProgressBar extends JSXBase.HTMLAttributes<HTMLProgressBarElement> {
     'complete'?: number;
   }
 
   interface IntrinsicElements {
+    'input-box': InputBox;
     'progress-bar': ProgressBar;
   }
 }
